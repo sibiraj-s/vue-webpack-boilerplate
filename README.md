@@ -1,4 +1,4 @@
-# Vue.js + Webpack boilerplate ![LICENSE](https://badgen.net/github/license/sibiraj-s/vue-webpack-boilerplate?color=green) [![Build Status](https://travis-ci.com/sibiraj-s/vue-webpack-boilerplate.svg?branch=master)](https://travis-ci.com/sibiraj-s/vue-webpack-boilerplate)
+# Vue.js + Webpack boilerplate ![LICENSE](https://badgen.net/github/license/sibiraj-s/vue-webpack-boilerplate) [![Build Status](https://travis-ci.com/sibiraj-s/vue-webpack-boilerplate.svg?branch=master)](https://travis-ci.com/sibiraj-s/vue-webpack-boilerplate)
 
 <p align="center">
   <img src="./src/assets/vue.svg" width="200" height="200" alt="vue.js" />

@@ -4,6 +4,7 @@ const HTMLWebpackPlugin = require('html-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const PkgJsonPlugin = require('pkg.json-webpack-plugin');
 const webpack = require('webpack');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const Paths = require('./Paths');
 
@@ -16,4 +17,5 @@ module.exports = [
   }),
   new PkgJsonPlugin(),
   new webpack.ProgressPlugin(),
+  new CleanWebpackPlugin(),
 ];

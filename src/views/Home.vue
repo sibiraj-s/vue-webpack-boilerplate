@@ -43,10 +43,15 @@ export default {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 80%;
   margin: auto;
   min-height: 20rem;
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
+
+  @media only screen and (max-width: 640px) {
+    align-items: initial;
+    padding: 0 1rem;
+  }
 
   .head {
     text-align: center;
@@ -59,11 +64,24 @@ export default {
     .description {
       width: 65%;
       margin: auto;
+
+      @media only screen and (max-width: 640px) {
+        width: unset;
+        text-align: left;
+      }
     }
 
     .vue-logo {
       height: 10rem;
       margin-bottom: 0.3rem;
+    }
+  }
+
+  .badges {
+    a {
+      @media only screen and (max-width: 640px) {
+        display: block;
+      }
     }
   }
 }

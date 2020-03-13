@@ -1,3 +1,2 @@
 '*.{js,vue,md,html,yaml,json}':
   - prettier --write
-  - git add

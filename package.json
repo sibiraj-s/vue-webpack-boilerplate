@@ -15,7 +15,6 @@
     "deploy": "NODE_ENV=gh-pages npm run build && node scripts/gh-pages.js"
   },
   "dependencies": {
-    "lodash": "^4.17.19",
     "vue": "^2.6.11",
     "vue-router": "^3.3.4"
   },

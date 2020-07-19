@@ -23,12 +23,10 @@
 </template>
 
 <script>
-import _ from 'lodash';
-
 export default {
   name: 'Home',
-  data: function() {
-    const title = _.get(process.env.pkgJson, 'description');
+  data: function () {
+    const title = process.env.pkgJson?.description;
 
     return {
       title,

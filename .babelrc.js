@@ -1,6 +1,6 @@
 /* eslint-disable global-require */
 
-const babelRc = api => {
+const babelRc = (api) => {
   const { env } = api;
 
   const isEnvDevelopment = env() === 'development';

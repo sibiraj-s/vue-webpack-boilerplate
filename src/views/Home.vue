@@ -77,8 +77,13 @@ export default {
 
   .badges {
     a {
+      & + a {
+        margin-left: 5px;
+      }
+
       @media only screen and (max-width: 640px) {
         display: block;
+        margin-left: 0 !important;
       }
     }
   }

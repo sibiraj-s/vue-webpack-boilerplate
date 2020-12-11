@@ -10,7 +10,7 @@ module.exports = [
   },
   {
     test: /\.(s)?css$/,
-    use: ['vue-style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
+    use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
   },
   {
     test: /\.(png|jpe?g|gif|svg)$/i,

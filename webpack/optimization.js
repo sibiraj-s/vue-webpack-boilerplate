@@ -1,4 +1,4 @@
-module.exports = {
+const optimization = {
   splitChunks: {
     cacheGroups: {
       commons: {
@@ -9,3 +9,5 @@ module.exports = {
     },
   },
 };
+
+module.exports = optimization;

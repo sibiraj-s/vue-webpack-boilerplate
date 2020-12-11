@@ -1,10 +1,10 @@
-import Vue from 'vue';
+import { createApp } from 'vue';
 
 import router from './router';
 
 import App from './App.vue';
 
-new Vue({
-  router,
-  render: (createElement) => createElement(App),
-}).$mount('#__root');
+const app = createApp(App);
+
+app.use(router);
+app.mount('#__root');

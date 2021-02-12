@@ -3,7 +3,6 @@ const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const { VueLoaderPlugin } = require('vue-loader');
 const PkgJsonPlugin = require('pkg.json-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const { ProgressPlugin, DefinePlugin } = require('webpack');
 
 const Paths = require('./Paths');
@@ -17,7 +16,6 @@ module.exports = [
   }),
   new PkgJsonPlugin(),
   new ProgressPlugin(),
-  new CleanWebpackPlugin(),
   new DefinePlugin({
     __VUE_OPTIONS_API__: 'true',
     __VUE_PROD_DEVTOOLS__: 'false',

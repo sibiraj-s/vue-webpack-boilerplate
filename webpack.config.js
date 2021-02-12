@@ -19,6 +19,7 @@ const config = {
   },
   entry: path.resolve(Paths.srcDir, 'index.js'),
   output: {
+    clean: true,
     filename: isProduction ? '[name].[contenthash].js' : '[name].js',
     path: Paths.outDir,
     publicPath: '/',

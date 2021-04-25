@@ -65,6 +65,8 @@ export default {
 @media only screen and (min-width: 640px) {
   .home {
     align-items: center;
+    margin: auto;
+    width: 80%;
 
     .head {
       text-align: center;
@@ -77,6 +79,12 @@ export default {
         margin-left: 5px;
       }
     }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .home {
+    width: 60%;
   }
 }
 </style>

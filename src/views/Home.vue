@@ -39,34 +39,16 @@ export default {
 .home {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
-  margin: auto;
-  min-height: 20rem;
   height: 100%;
   min-height: 100vh;
-
-  @media only screen and (max-width: 640px) {
-    align-items: initial;
-    padding: 0 1rem;
-  }
+  padding: 0 1rem;
 
   .head {
-    text-align: center;
     margin-bottom: 1.5rem;
 
     .title {
       margin-bottom: 0.5rem;
-    }
-
-    .description {
-      width: 65%;
-      margin: auto;
-
-      @media only screen and (max-width: 640px) {
-        width: unset;
-        text-align: left;
-      }
     }
 
     .vue-logo {
@@ -76,14 +58,23 @@ export default {
   }
 
   .badges {
-    a {
-      & + a {
-        margin-left: 5px;
-      }
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 640px) {
+  .home {
+    align-items: center;
 
-      @media only screen and (max-width: 640px) {
-        display: block;
-        margin-left: 0 !important;
+    .head {
+      text-align: center;
+    }
+
+    .badges {
+      flex-direction: row;
+
+      a + a {
+        margin-left: 5px;
       }
     }
   }

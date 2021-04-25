@@ -19,4 +19,11 @@ body {
 *::before {
   box-sizing: border-box;
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: black;
+    color: white;
+  }
+}
 </style>

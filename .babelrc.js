@@ -10,7 +10,7 @@ const babelRc = (api) => {
     presets: [
       (isEnvProduction || isEnvDevelopment) && [
         // Latest stable ECMAScript features
-        require('@babel/preset-env').default,
+        '@babel/preset-env',
         {
           // Allow importing core-js in entrypoint and use browserlist to select polyfills
           useBuiltIns: 'entry',

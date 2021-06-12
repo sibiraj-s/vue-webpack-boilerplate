@@ -1,4 +1,4 @@
-const path = require('path');
+const path = require('node:path');
 
 const rules = require('./webpack/rules');
 const plugins = require('./webpack/plugins');

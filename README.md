@@ -13,7 +13,7 @@ git clone https://github.com/sibiraj-s/vue-webpack-boilerplate.git
 Run
 
 ```bash
-npm start
+npm run dev
 ```
 
 Build

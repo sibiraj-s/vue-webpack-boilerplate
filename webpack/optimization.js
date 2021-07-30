@@ -1,4 +1,5 @@
 const optimization = {
+  runtimeChunk: 'single',
   splitChunks: {
     cacheGroups: {
       commons: {

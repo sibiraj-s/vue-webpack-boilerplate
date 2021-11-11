@@ -6,6 +6,7 @@ const optimization = {
         test: /[\\/]node_modules[\\/]/,
         name: 'vendors',
         chunks: 'all',
+        maxSize: 240000, // 240kb
       },
     },
   },

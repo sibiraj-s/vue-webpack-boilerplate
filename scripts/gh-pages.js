@@ -35,6 +35,7 @@ const deploy = async () => {
     console.log(chalk.green(`\nDocumentation published successfully to ${chalk.cyan("'gh-pages'")} \n`));
   } catch (err) {
     console.log(chalk.red('Unable to publish docs. Error:'), err);
+    process.exit(1);
   }
 };
 

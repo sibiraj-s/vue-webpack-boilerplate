@@ -7,11 +7,9 @@ const optimization = require('./webpack/optimization');
 
 const Paths = require('./webpack/Paths');
 
-const WEBPACK_MODE = process.env.NODE_ENV === 'development' ? 'development' : 'production';
-const isProduction = WEBPACK_MODE === 'production';
+const isProduction = process.env.NODE_ENV === 'production';
 
 const config = {
-  mode: WEBPACK_MODE,
   bail: isProduction,
   resolve: {
     extensions: ['.js', '.vue'],

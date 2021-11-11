@@ -9,10 +9,10 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "dev": "webpack serve",
-    "build": "webpack",
+    "dev": "webpack serve --mode=development",
+    "build": "webpack --mode=production",
     "test": "npm run build",
-    "deploy": "NODE_ENV=gh-pages npm run build && node scripts/gh-pages.js",
+    "deploy": "node scripts/gh-pages.js",
     "prepare": "is-ci || husky install"
   },
   "dependencies": {

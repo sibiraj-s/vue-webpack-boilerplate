@@ -1,4 +1,4 @@
-module.exports = [
+const rules = [
   {
     test: /\.js$/,
     exclude: /(node_modules)/,
@@ -20,3 +20,5 @@ module.exports = [
     },
   },
 ];
+
+export default rules;

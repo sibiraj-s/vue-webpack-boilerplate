@@ -1,18 +1,19 @@
-const path = require('node:path');
+import path from 'node:path';
+import HTMLWebpackPlugin from 'html-webpack-plugin';
+import { VueLoaderPlugin } from 'vue-loader';
+import PkgJsonPlugin from 'pkg.json-webpack-plugin';
+import webpack from 'webpack';
 
-const HTMLWebpackPlugin = require('html-webpack-plugin');
-const { VueLoaderPlugin } = require('vue-loader');
-const PkgJsonPlugin = require('pkg.json-webpack-plugin');
-const { ProgressPlugin, DefinePlugin } = require('webpack');
+import { srcDir } from './Paths.js';
 
-const Paths = require('./Paths');
+const { ProgressPlugin, DefinePlugin } = webpack;
 
-module.exports = [
+const plugins = [
   new VueLoaderPlugin(),
   new HTMLWebpackPlugin({
-    template: path.resolve(Paths.srcDir, 'index.html'),
+    template: path.resolve(srcDir, 'index.html'),
     filename: './index.html',
-    favicon: path.resolve(Paths.srcDir, 'assets/favicon.ico'),
+    favicon: path.resolve(srcDir, 'assets/favicon.ico'),
   }),
   new PkgJsonPlugin(),
   new ProgressPlugin(),
@@ -21,3 +22,5 @@ module.exports = [
     __VUE_PROD_DEVTOOLS__: 'false',
   }),
 ];
+
+export default plugins;

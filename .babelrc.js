@@ -1,14 +1,7 @@
-/* eslint-disable global-require */
-
-const babelRc = (api) => {
-  const { env } = api;
-
-  const isEnvDevelopment = env() === 'development';
-  const isEnvProduction = !isEnvDevelopment;
-
+const babelRc = () => {
   return {
     presets: [
-      (isEnvProduction || isEnvDevelopment) && [
+      [
         // Latest stable ECMAScript features
         '@babel/preset-env',
         {
@@ -22,11 +15,11 @@ const babelRc = (api) => {
           exclude: ['transform-typeof-symbol'],
         },
       ],
-    ].filter(Boolean),
+    ],
     plugins: [
-      // include plugin required here
-    ].filter(Boolean),
+      // include required plugins here
+    ],
   };
 };
 
-module.exports = babelRc;
+export default babelRc;

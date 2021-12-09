@@ -1,24 +1,20 @@
-const path = require('node:path');
+import path from 'node:path';
 
-const rules = require('./webpack/rules');
-const plugins = require('./webpack/plugins');
-const devServer = require('./webpack/devServer');
-const optimization = require('./webpack/optimization');
-
-const Paths = require('./webpack/Paths');
+import rules from './webpack/rules.js';
+import plugins from './webpack/plugins.js';
+import devServer from './webpack/devServer.js';
+import optimization from './webpack/optimization.js';
+import { srcDir, outDir } from './webpack/Paths.js';
 
 const isProduction = process.env.NODE_ENV === 'production';
 
 const config = {
   bail: isProduction,
-  resolve: {
-    extensions: ['.js', '.vue'],
-  },
-  entry: path.resolve(Paths.srcDir, 'index.js'),
+  entry: path.resolve(srcDir, 'index.js'),
   output: {
     clean: true,
     filename: isProduction ? 'js/[name].[contenthash].js' : 'js/[name].js',
-    path: Paths.outDir,
+    path: outDir,
     publicPath: 'auto',
   },
   module: {
@@ -29,4 +25,4 @@ const config = {
   devServer,
 };
 
-module.exports = config;
+export default config;

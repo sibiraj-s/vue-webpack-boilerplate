@@ -1,11 +1,8 @@
-const path = require('node:path');
+import { resolve, dirname } from 'node:path';
+import { fileURLToPath } from 'url';
 
-const rootDir = path.resolve(__dirname, '..');
-const srcDir = path.resolve(rootDir, 'src');
-const outDir = path.resolve(rootDir, 'build');
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
-module.exports = {
-  rootDir,
-  srcDir,
-  outDir,
-};
+export const rootDir = resolve(__dirname, '..');
+export const srcDir = resolve(rootDir, 'src');
+export const outDir = resolve(rootDir, 'build');

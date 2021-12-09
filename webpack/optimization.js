@@ -12,4 +12,4 @@ const optimization = {
   },
 };
 
-module.exports = optimization;
+export default optimization;

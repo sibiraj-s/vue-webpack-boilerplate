@@ -12,7 +12,7 @@
   "scripts": {
     "dev": "webpack serve --mode=development",
     "build": "webpack --mode=production",
-    "test": "npm run build",
+    "test": "jest",
     "prepare": "is-ci || husky install"
   },
   "dependencies": {
@@ -24,13 +24,17 @@
     "@babel/preset-env": "^7.16.4",
     "@commitlint/cli": "^15.0.0",
     "@commitlint/config-conventional": "^15.0.0",
+    "@jest/globals": "^27.4.2",
     "@vue/compiler-sfc": "^3.2.24",
+    "@vue/test-utils": "^2.0.0-rc.17",
+    "@vue/vue3-jest": "^27.0.0-alpha.4",
     "autoprefixer": "^10.4.0",
     "babel-loader": "^8.2.3",
     "css-loader": "^6.5.1",
     "html-webpack-plugin": "^5.5.0",
     "husky": "^7.0.4",
     "is-ci": "^3.0.1",
+    "jest": "^27.4.3",
     "lint-staged": "^12.1.2",
     "pkg.json-webpack-plugin": "^2.0.1",
     "postcss": "^8.4.4",

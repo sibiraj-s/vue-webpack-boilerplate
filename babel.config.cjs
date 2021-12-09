@@ -1,7 +1,9 @@
-const babelRc = () => {
+const babelRc = (api) => {
+  const isTest = api.env('test')
+
   return {
     presets: [
-      [
+      !isTest && [
         // Latest stable ECMAScript features
         '@babel/preset-env',
         {
@@ -15,11 +17,21 @@ const babelRc = () => {
           exclude: ['transform-typeof-symbol'],
         },
       ],
-    ],
+      isTest && [
+        '@babel/preset-env',
+        {
+          // describe the environments support/targets
+          targets: {
+            // compile against the current node version
+            node: 'current'
+          }
+        },
+      ]
+    ].filter(Boolean),
     plugins: [
       // include required plugins here
     ],
   };
 };
 
-export default babelRc;
+module.exports = babelRc;

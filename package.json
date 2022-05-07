@@ -16,36 +16,36 @@
     "prepare": "is-ci || husky install"
   },
   "dependencies": {
-    "vue": "^3.2.31",
-    "vue-router": "^4.0.14"
+    "vue": "^3.2.33",
+    "vue-router": "^4.0.15"
   },
   "devDependencies": {
-    "@babel/core": "^7.17.8",
-    "@babel/preset-env": "^7.16.11",
-    "@commitlint/cli": "^16.2.3",
-    "@commitlint/config-conventional": "^16.2.1",
+    "@babel/core": "^7.17.10",
+    "@babel/preset-env": "^7.17.10",
+    "@commitlint/cli": "^16.2.4",
+    "@commitlint/config-conventional": "^16.2.4",
     "@jest/globals": "^27.5.1",
-    "@vue/compiler-sfc": "^3.2.31",
-    "@vue/test-utils": "^2.0.0-rc.18",
+    "@vue/compiler-sfc": "^3.2.33",
+    "@vue/test-utils": "2.0.0-rc.21",
     "@vue/vue3-jest": "^27.0.0-alpha.4",
-    "autoprefixer": "^10.4.4",
-    "babel-loader": "^8.2.4",
+    "autoprefixer": "^10.4.7",
+    "babel-loader": "^8.2.5",
     "css-loader": "^6.7.1",
     "html-webpack-plugin": "^5.5.0",
     "husky": "^7.0.4",
     "is-ci": "^3.0.1",
     "jest": "^27.5.1",
-    "lint-staged": "^12.3.7",
+    "lint-staged": "^12.4.1",
     "pkg.json-webpack-plugin": "^2.0.2",
-    "postcss": "^8.4.12",
+    "postcss": "^8.4.13",
     "postcss-loader": "^6.2.1",
-    "prettier": "^2.6.1",
-    "sass": "^1.49.10",
+    "prettier": "^2.6.2",
+    "sass": "^1.51.0",
     "sass-loader": "^12.6.0",
     "style-loader": "^3.3.1",
     "vue-loader": "^17.0.0",
-    "webpack": "^5.70.0",
+    "webpack": "^5.72.0",
     "webpack-cli": "^4.9.2",
-    "webpack-dev-server": "4.7.4"
+    "webpack-dev-server": "4.9.0"
   }
 }

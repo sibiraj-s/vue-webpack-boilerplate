@@ -1,5 +1,5 @@
 const babelRc = (api) => {
-  const isTest = api.env('test')
+  const isTest = api.env('test');
 
   return {
     presets: [
@@ -23,10 +23,10 @@ const babelRc = (api) => {
           // describe the environments support/targets
           targets: {
             // compile against the current node version
-            node: 'current'
-          }
+            node: 'current',
+          },
         },
-      ]
+      ],
     ].filter(Boolean),
     plugins: [
       // include required plugins here

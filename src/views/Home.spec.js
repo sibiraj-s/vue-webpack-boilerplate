@@ -1,4 +1,4 @@
-import { expect, test } from '@jest/globals';
+import { expect, test } from 'vitest';
 import { mount } from '@vue/test-utils';
 
 import Home from './Home.vue';
